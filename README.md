@@ -1,78 +1,83 @@
 # Abhishek Kumar — Developer Portfolio
 
-A personal portfolio website for Abhishek Kumar, a MERN Stack Developer. Built to showcase his skills, projects, and education to recruiters and potential collaborators.
+Personal portfolio for Abhishek Kumar, a developer focused on full-stack web development and problem solving. The site presents his background, skills, projects, education, and contact information.
 
-## Live Demo
+## Live Portfolio
 
-Once deployed on GitHub Pages, the site will be available at:
-`https://<your-github-username>.github.io/<repo-name>/`
+[abhishek638983k-oss.github.io/portfolio](https://abhishek638983k-oss.github.io/portfolio/)
 
 ## Features
 
-- Dark mode by default with a light/dark theme toggle (preference saved in local storage)
-- Responsive layout that works across mobile, tablet, and desktop
-- Animated hero section with a particle network background and a typewriter effect
-- Smooth scrolling and scroll-triggered reveal animations
-- Sections for About, Skills, Projects, Education, and Contact
-- Project cards with live screenshots, descriptions, tech tags, and links to live demos
-- Frontend-only contact form with basic validation
-- SEO-friendly meta tags and semantic HTML
+- Responsive layout for desktop, tablet, and mobile
+- Light and dark themes, with the selected theme saved in the browser
+- Animated hero section with a typewriter effect and particle background
+- About, skills, projects, education, and contact sections
+- Project screenshots with links to live demos
+- Resume download and view links
+- Contact form with client-side validation and direct email details
+
+## Projects
+
+| Project | Description | Live demo |
+| --- | --- | --- |
+| LifeXP | A gamified challenge platform for tracking goals, streaks, and progress | [Open LifeXP](https://abhishek638983k-oss.github.io/lifexp/) |
+| Temp Chat | Temporary messaging with friend requests and expiring messages | [Open Temp Chat](https://tempchat-qfvj.onrender.com/) |
+| Traffic Rush | A retro-style car-dodging game | [Play Traffic Rush](https://abhishek638983k-oss.github.io/TrafficRush/) |
+| Currency Converter | A live currency conversion tool | [Open Currency Converter](https://abhishek638983k-oss.github.io/currency-converter/) |
+| Advanced Calculator | A browser-based calculator | [Open Calculator](https://abhishek638983k-oss.github.io/calculater/) |
 
 ## Tech Stack
 
 - HTML5
-- CSS3 (custom properties, flexbox, grid, animations)
-- Vanilla JavaScript (no frameworks or build tools)
+- CSS3, including custom properties, Flexbox, Grid, and animations
+- Vanilla JavaScript
+- Google Fonts and Font Awesome, loaded from CDNs
 
-## Folder Structure
+There is no build step or package installation required.
 
+## Run Locally
+
+Open `index.html` directly in a browser, or start a local static server from the project root:
+
+```bash
+python -m http.server 8000
 ```
+
+Then visit [http://localhost:8000](http://localhost:8000).
+
+## Repository Contents
+
+```text
 .
 ├── index.html
 ├── style.css
 ├── script.js
-├── assets/
-│   └── projects/
-│       ├── lifexp.png
-│       ├── currency-converter.png
-│       └── calculator.png
+├── Abhishek_Kumar_Resume.pdf
+├── certificate-delta-90-6ac2443194f2318c510268c3.pdf
+├── lifexp.png
+├── tempChat.png
+├── trafficrush.png
+├── currency-converter.png
+├── calculater.png
 └── README.md
 ```
 
-## Sections Overview
+The screenshots and PDFs are stored in the project root and are referenced there by the site.
 
-1. **Hero** — Name, title, short introduction, and call-to-action buttons (View Projects, Contact Me, Download Resume).
-2. **About Me** — Background, interests, and what drives Abhishek as a developer.
-3. **Skills** — Languages, development areas, tools, and databases displayed as tags and a scrolling marquee.
-4. **Projects** — LifeXP, Live Currency Converter, and Advanced Calculator, each with a screenshot, description, and links.
-5. **Education** — Diploma details, achievements, and certificates.
-6. **Contact** — Contact form (frontend only) plus direct email, LinkedIn, GitHub, and LeetCode links.
+## Deployment
 
-## Running Locally
+This is a static site and can be hosted with GitHub Pages:
 
-No build steps are required. Simply open `index.html` in a browser, or serve the folder with any static server, e.g.:
-
-```bash
-npx serve .
-```
-
-## Deployment to GitHub Pages
-
-1. Create a new GitHub repository and push this project's files to it.
-2. In the repository, go to **Settings → Pages**.
-3. Under **Source**, select the `main` branch and the `/ (root)` folder.
-4. Save. GitHub will publish the site at `https://<your-username>.github.io/<repo-name>/`.
-5. Wait a minute or two for the deployment to complete, then visit the URL.
-
-## Notes
-
-- The "Download Resume" button is currently a placeholder. Replace its behavior in `script.js` and add a resume PDF to the `assets/` folder once available.
-- The contact form does not send emails; it validates input and prompts visitors to email Abhishek directly. Connect it to a service like Formspree or EmailJS if a working form is needed.
-- Project screenshots live in `assets/projects/`. Replace them with updated screenshots as the projects evolve.
+1. Push the project files to the `main` branch of the `portfolio` repository.
+2. In GitHub, open **Settings → Pages**.
+3. Set the deployment source to the `main` branch and the root (`/`) folder, then save.
+4. After deployment, visit [https://abhishek638983k-oss.github.io/portfolio/](https://abhishek638983k-oss.github.io/portfolio/).
 
 ## Contact
 
-- Email: abhishek638983k@gmail.com
-- LinkedIn: [abhishek-tyagii](https://www.linkedin.com/in/abhishek-tyagii)
+- Email: [abhishek638983k@gmail.com](mailto:abhishek638983k@gmail.com)
+- LinkedIn: [Abhishek Kumar](https://www.linkedin.com/in/abhishekkumarengg/)
 - GitHub: [abhishek638983k-oss](https://github.com/abhishek638983k-oss)
 - LeetCode: [abhishek638983k-oss](https://leetcode.com/u/abhishek638983k-oss/)
+
+The contact form currently validates input in the browser but does not send submissions to an email service. Visitors can use the direct email link instead.
